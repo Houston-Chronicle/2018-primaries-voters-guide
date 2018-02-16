@@ -1,0 +1,207 @@
+/* Custom CSS styles */
+p {
+	font-family: "Antenna", sans-serif;
+	font-size: 18px;
+	line-height: inherit;
+	margin-bottom:24px;
+}
+hr {
+	margin:10px 0;
+	border-top:1px solid #000;
+}
+h2 {
+	font-family:'Antenna', sans-serif;
+	margin-top:40px;
+}
+strong {
+	font-family: "Antenna", sans-serif;
+	font-size:15px;
+}
+/* Hide stuff */
+.clearraces, #clearcandidates, #candidacy, #races, .dem, .gop, .both, #guidefilter {
+	display:none;
+}
+/* Clear filter styles */
+.clear, .clear:hover {
+	color:#696969;
+	cursor:pointer;
+}
+/* Filter styles */
+.partyfilters button, .partyfilters select {
+	font-family:"Antenna", sans-serif;
+	text-align:left;
+	font-weight:bold;
+	text-transform:uppercase;
+	background-color:#f3f1f1;
+	width:50%;
+	height:40px;
+	font-size:16px;
+	margin-bottom:5px;
+	overflow:visible;
+	border-color:buttonface;
+	border-style:outset;
+	border-image:initial;
+	border-width:2px;
+	border-radius:5px;
+}
+.partyfilters select option {
+	font-family: 'Antenna', sans-serif;
+	font-weight:bold;
+	letter-spacing:0.625em;
+	text-transform:uppercase;
+	cursor:hover;
+}
+@media (max-width:500px) {
+	.partyfilters button, .partyfilters select {
+		width:100%;
+	}
+}
+.partyfilters button.selected {
+	background-color:#666;
+	color:#fff;
+}
+.partyfilters {
+	margin-top:24px;
+	padding-bottom:12px;
+}
+.partyfilters ul {
+	text-align:center;
+	padding-left:0;
+	margin-bottom:0; 
+}
+.partyfilters li {
+	display:inline;
+	font-size:16px;
+}
+/*Races list styles*/
+#races {
+	margin-bottom:24px;
+}
+#races p {
+	text-transform:uppercase;
+	font-family: 'Antenna', sans-serif;
+	font-weight:bold;
+}
+#races ul {
+	list-style-type: none; 
+}
+#races li, #races li:hover {
+	font-family:'Georgia', serif;
+	font-size:18px;
+	color:#696969;
+	padding: 6px 0;
+	cursor:pointer;
+}
+/* Results styles */
+.candidacy {
+	padding-top:12px;
+}
+.results {
+	margin: 15px auto 12px auto;
+	padding:5px 15px;
+}
+.results p {
+	font-size:12px;
+	margin-bottom:10px;
+	font-family: "Georgia", serif;
+	font-size:14px;
+}
+.results .img-responsive {
+	height:50%;
+	width:100%;
+	padding-bottom:16px;
+}
+.name, .name:hover{
+	font-size:18px;
+	font-weight:600;
+	font-family: "Antenna", sans-serif;
+	text-transform:uppercase;
+	display:inline;
+	padding:0 0 15px 5px;
+	cursor:pointer;
+}
+#guidefilter {
+	padding-bottom:5%;
+}
+/* Hyperlink styling */
+a, a:visited {
+	color: #696969;
+	text-decoration: none;
+	border-bottom: none;
+}
+a:hover {
+	border-bottom:none;
+}
+/*Navbar styline*/
+.navbar {
+	margin-bottom:0;
+}
+.navbar-brand > img {
+	display: block;
+	max-width: 228px;
+	max-height: 25px;
+}
+/* Mobile navbar styles */
+@media (max-width: 1220px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block!important;
+	}
+}
+@media only screen and (min-width : 768px) and (max-width : 1205px) {
+    .navbar-default .navbar-collapse {
+        max-height:100vh;
+    }
+}
+/* Terms and row styles */
+.indices a:hover {
+	color:#222;
+	text-decoration:underline;
+}
+.indices {
+	margin-bottom:8%;
+}
+.indices p {
+	font-family: 'Georgia', serif;
+	margin-bottom:12px;
+	font-size:14px;
+}
+.indices h2 {
+	font-size:24px;
+	margin-bottom:24px;
+}
+@media (min-width:767px) {
+	.row [class*="col-"]{
+	  margin-bottom: -99999px;
+	  padding-bottom: 99999px;
+	}
+	.row{
+	  overflow: hidden; 
+	}
+}
